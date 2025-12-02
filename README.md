@@ -9,6 +9,27 @@ A collection of edge detection papers and corresponding source code/demo program
 ![examples](https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers/blob/master/edge-detection.png)
 
 
+## Personal Long-Term Memory Agent (Executable Python App)
+
+The repository now includes a runnable Python app that encapsulates the workflow described in the attached task image. The app can ingest multi-modal digital memories, auto-tag them, and surface coherent answers, albums, and summaries.
+
+### Quickstart
+
+```bash
+python memory_agent_app.py ingest "Trip to Shanghai" "Visited the Bund and Yu Garden in Shanghai." "iphone-photos" photo
+python memory_agent_app.py search "Shanghai Bund"
+python memory_agent_app.py qa "When did I visit Shanghai?"
+python memory_agent_app.py timeline --start 2024-01-01
+python memory_agent_app.py album travel
+python memory_agent_app.py summarize --limit 10
+```
+
+Key capabilities include:
+- **Auto-tagging & timestamping:** Automatically generates keyword tags and ISO timestamps when ingesting content.
+- **Retrieval & QA:** Keyword search, time-filtered timelines, tag-based albums, and simple factoid answers using stored context.
+- **Content generation:** Produces short summaries or album narratives from relevant memories.
+
+
 **Outline**
 
 - [Edge detection related dataset](#0-edge-detection-related-dataset)
