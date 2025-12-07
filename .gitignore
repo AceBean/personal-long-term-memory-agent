@@ -1,6 +1,6 @@
 memory_index.pt
-inputs/
-outputs/
+memory_cache/
+memory_data/
 *.mp4
 *.m4a
 *.jpg
