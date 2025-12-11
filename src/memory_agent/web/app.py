@@ -40,8 +40,7 @@ def ensure_index_loaded() -> bool:
 def call_qwen_chat(messages, model_name: str):
     from openai import OpenAI
     client = OpenAI(
-        api_key="sk-249bef7cbed5492294eb70ba9f3a3de1",
-        # api_key=os.environ.get("DASHSCOPE_API_KEY"),
+        api_key=os.environ.get("DASHSCOPE_API_KEY"),
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     resp = client.chat.completions.create(
